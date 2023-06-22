@@ -35,19 +35,21 @@ public class Main {
             }
             System.out.println();
         }
-        boolean charAreEqual = true;
-        charAreEqual = s.length == reverseString.length;
-        if (charAreEqual) {
-            for (int count = 0; count < reverseString.length; count++) {
-                if (s[count] != reverseString[count]) {
-                    charAreEqual = false;
-                }
-            }
-        } if (charAreEqual) {
-            System.out.println("Палиндром");
-        } else {
-            System.out.println("Не палиндром");
-        }
+        System.out.println(reverseString.equals(s));
+
+//        boolean charAreEqual = true;
+//        charAreEqual = s.length == reverseString.length;
+//        if (charAreEqual) {
+//            for (int count = 0; count < reverseString.length; count++) {
+//                if (s[count] != reverseString[count]) {
+//                    charAreEqual = false;
+//                }
+//            }
+//        } if (charAreEqual) {
+//            System.out.println("Палиндром");
+//        } else {
+//            System.out.println("Не палиндром");
+//        }
     }  // возможно требуется разбить массив на ячейки, чтобы сравнивать каджую, а в строках используются другие методы сравнения
 }
 
